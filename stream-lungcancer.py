@@ -63,9 +63,9 @@ if st.button('Test Prediksi'):
     lungcancer_prediction = lungcancer_model.predict([[GENDER, AGE, SMOKING, YELLOW_FINGERS, ANXIETY, PEER_PRESSURE, CHRONIC_DISEASE, FATIGUE, ALLERGY, WHEEZING, ALCOHOL_CONSUMING, COUGHING, SHORTNESS_OF_BREATH, SWALLOWING_DIFFICULTY, CHEST_PAIN]])
 
     if(lungcancer_prediction[0] == 1):
-        lungcancer_diagnosis = 'Pasien terkena kanker paru-paru'
+        lungcancer_diagnosis = 'Pasien mengidap kanker paru-paru'
     else:
-        lungcancer_diagnosis = 'Pasien tidak terkena kanker paru-paru'
+        lungcancer_diagnosis = 'Pasien tidak mengidap kanker paru-paru'
 
     st.success(lungcancer_diagnosis)
 
